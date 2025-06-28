@@ -1,0 +1,102 @@
+body {
+  background: #fef6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.toad {
+  position: relative;
+}
+
+/* Cap */
+.cap {
+  width: 220px;
+  height: 140px;
+  background: white;
+  border-radius: 110px 110px 70px 70px;
+  border: 4px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Red spots */
+.spot {
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.center-spot {
+  width: 90px;
+  height: 90px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-half-spot {
+  width: 90px;
+  height: 90px;
+  top: 30px;
+  left: -45px;
+}
+
+.right-half-spot {
+  width: 90px;
+  height: 90px;
+  top: 30px;
+  right: -45px;
+}
+
+/* Face */
+.face {
+  background: #ffe0b3;
+  width: 140px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  border: 4px solid black;
+  z-index: 1;
+}
+
+/* Eyes */
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.eye {
+  width: 20px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye-shine {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+
+/* Mouth */
+.mouth {
+  width: 35px;
+  height: 20px;
+  background: transparent;
+  border-bottom: 4px solid black;
+  border-radius: 0 0 40px 40px;
+  margin: 20px auto 0;
+  position: relative;
+  z-index: 2;
+}
